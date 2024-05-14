@@ -1,9 +1,9 @@
 import 'figura.dart';
 
 class Cuadrado extends Figura {
-  Cuadrado(this.lado, super.color);
+  final double lado;
 
-  double lado;
+  const Cuadrado(this.lado, super.color);
 
   @override
   double calcularArea() {
@@ -17,7 +17,7 @@ class Cuadrado extends Figura {
 }
 
 void main() {
-  final cuadrado = Cuadrado(10, "rojo");
+  final cuadrado = const Cuadrado(10, "rojo");
   final area1 = cuadrado.calcularArea();
   final perimetro1 = cuadrado.calcularPerimetro();
   print("area: $area1, perimetro: $perimetro1");

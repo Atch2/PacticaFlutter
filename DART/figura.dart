@@ -1,7 +1,7 @@
 abstract class Figura {
-  String color;
+  final String color;
 
-  Figura(this.color);
+  const Figura(this.color);
 
   double calcularArea();
 
